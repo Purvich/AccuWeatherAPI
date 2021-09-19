@@ -15,7 +15,7 @@ public class AccuweatherModel implements WeatherModel {
     private static final String DAILY = "daily";
     private static final String ONE_DAY = "1day";
     private static final String FIVE_DAYS = "5day";
-    private static final String API_KEY = "1pBnQXMkvcoPUugD92CUuGfoJpdwt7qo";
+    private static final String API_KEY = "rAt18GzoUGj6uY2st6NWDkxSo9s6TWG3";
     private static final String API_KEY_QUERY_PARAM = "apikey";
     private static final String LOCATIONS = "locations";
     private static final String CITIES = "cities";

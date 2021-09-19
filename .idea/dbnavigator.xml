@@ -26,14 +26,14 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="8eb6df32-6c1b-4825-9a9f-6fc9f12bfecf">
-        <schema name="main" object-types="table, view" />
+        <schema name="main" object-types="table, view, column" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="8eb6df32-6c1b-4825-9a9f-6fc9f12bfecf">
-      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[create table weather (id integer primary key autoincrement, city text, localDate text, maximalTemperature real)
-select * from weather]]></console>
+      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[create table weather (id integer primary key autoincrement, city text, localDate text, 
+maximalTemperature real)]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

@@ -12,7 +12,8 @@ public class UserInterfaceView {
 
         while (true) {
 
-            System.out.println("Введите имя города: " + "\n" + "Для выхода введите 0:");
+            System.out.println("Введите имя города на русском: "
+                    + "\n" + "Для выхода введите 0:");
             String city = scanner.nextLine();
 
             if (city.equals("0")) {
@@ -21,7 +22,8 @@ public class UserInterfaceView {
 
             while (true) {
 
-                System.out.println("Введите 1 для получения погоды на сегодня;" + "\n"
+                System.out.println("\n"
+                        +"Введите 1 для получения погоды на сегодня;" + "\n"
                         + "Введите 5 для прогноза на 5 дней;" + "\n"
                         + "Введите 2 для получения данных из базы данных;"
                         + "\n" + "Для выхода введите 0:");
@@ -34,7 +36,7 @@ public class UserInterfaceView {
                     } catch (IOException | SQLException e) {
                         e.printStackTrace();
                     }
-                    break;
+                    continue;
                 }
                 if (command.equals("2")) {
                     try {
