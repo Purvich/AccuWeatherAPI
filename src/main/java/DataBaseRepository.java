@@ -7,6 +7,7 @@ public class DataBaseRepository {
     private final String insertWeather = "insert into weather (city, localDate, maximalTemperature) values (?, ?, ?)";
     private final String getWeather = "select * from weather";
     private static final String DB_PATH = "jdbc:sqlite:WeatherArchive.db";
+    private static final String textCelsius = "℃;";
 
     static {
         try {
@@ -51,13 +52,14 @@ public class DataBaseRepository {
             ResultSet resultSet = statement.executeQuery(getWeather);
             while (resultSet.next()) {
                 System.out.print(resultSet.getInt("id") );
-                System.out.print(" ");
+                System.out.print(" Максимальная температура в городе ");
                 System.out.print(resultSet.getString("city"));
                 System.out.print(" ");
                 System.out.print(resultSet.getString("localDate"));
                 System.out.print(" ");
                 System.out.print(resultSet.getDouble("maximalTemperature"));
-                System.out.println(" ");
+                System.out.print(" ");
+                System.out.println(textCelsius);
                 weathers.add(new Weather(resultSet.getString("city"),
                         resultSet.getString("localDate"),
                         resultSet.getDouble("maximalTemperature")));

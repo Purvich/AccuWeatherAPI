@@ -76,6 +76,7 @@ public class AccuweatherModel implements WeatherModel {
                 .addPathSegment(AUTOCOMPLETE)
                 .addQueryParameter(API_KEY_QUERY_PARAM, API_KEY)
                 .addQueryParameter("q", selectCity)
+                .addQueryParameter(LANGUAGE_QUERY_PARAM, LANGUAGE)
                 .build();
 
         Request request = new Request.Builder()
