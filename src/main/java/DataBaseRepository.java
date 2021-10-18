@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.*;
 
 public class DataBaseRepository {
+
     private final String insertWeather = "insert into weather (city, localDate, maximalTemperature) values (?, ?, ?)";
     private final String getWeather = "select * from weather";
     private static final String DB_PATH = "jdbc:sqlite:WeatherArchive.db";

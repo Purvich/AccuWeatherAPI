@@ -13,7 +13,8 @@ public class UserInterfaceView {
         while (true) {
 
             System.out.println("Введите имя города на русском: "
-                    + "\n" + "Для выхода введите 0:");
+                    + "\n"
+                    + "Для выхода введите 0:");
             String city = scanner.nextLine();
 
             if (city.equals("0")) {
